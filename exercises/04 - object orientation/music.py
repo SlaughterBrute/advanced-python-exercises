@@ -5,6 +5,9 @@ class Track():
     
     def __str__(self) -> str:
         return self.description
+    
+    def __eq__(self, other) -> bool:
+        return self.description == other.description
 
 class CD_ROM():
     def __init__(self, max_length=74) -> None:

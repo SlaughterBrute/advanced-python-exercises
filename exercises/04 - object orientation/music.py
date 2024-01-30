@@ -3,9 +3,9 @@ class Track():
         self.description = description
         self.length = length
 
-class CR_ROM():
+class CD_ROM():
     def __init__(self):
-        pass
+        self.tracks = []
 
     def add_track(self, track):
         if self.can_add_track(track):
